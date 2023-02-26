@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/book-library.png" type="image/png">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Library</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="images/book-library.png" alt="" id="logo">
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section id="search_section">
+          <input type="text" id="book_search_field" placeholder="Search your favorite books name or books types">
+          <button id="book_search_button" onclick="bookSearchButton()">Search</button><br>
+          <p id="shows_result"><span id="show_result_counter">0</span> results found</p>
+      </section>
+      <section id="books_search_results">     
+      </section>
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>

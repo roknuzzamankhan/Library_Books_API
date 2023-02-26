@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+  margin: 50px auto 0 auto;
+  width: 1500px;
+  max-width: 90%;
+}
+
+/*============== Logo ==============*/
+#logo {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+
+/*============== Input Field ==============*/
+#search_section {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#book_search_field, #book_search_button {
+  margin: 0 auto;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  box-shadow: 0px 0px 10px -5px rgb(75, 75, 75) inset;
+}
+
+#book_search_field {
+  width: 50%;
+  min-width: 100px;
+  padding: 15px;
+  color: rgb(92, 92, 92);
+  border: 5px solid skyblue;
+  outline: none;
+  background-color: transparent;
+}
+
+#book_search_button {
+  width: 10%;
+  background-color: skyblue;
+  border: none;
+}
+
+#book_search_button:active {
+  background-color: rgb(0, 183, 255);
+}
+
+/*============== Show Results Count ==============*/
+#shows_result {
+  margin: 30px 0;
+  visibility: hidden;
+}
+
+/*============== Error Message ==============*/
+#no_result_found {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*============== All books ==============*/
+#books_search_results {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  margin: 70px auto;
+}
+
+.books_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 3%;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgb(75, 75, 75);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  overflow: hidden;
+  transition: transform .1s ease;
+  -webkit-transition: transform .1s ease;
+  -moz-transition: transform .1s ease;
+  -ms-transition: transform .1s ease;
+  -o-transition: transform .1s ease;
+}
+
+.books_container_infos {
+  padding: 0 5px 10px 5px;
+}
+
+.books_container:hover {
+  transform: scale(1.05, 1.05);
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+}
+
+.books_container img {
+  width: 100%;
+  height: 400px;
+}
+
+.books_container h1 {
+  font-weight: 700;
+}
+
+.books_container h2 {
+  color: rgb(56, 99, 219);
+}
+
+.books_container h3 {
+  color: rgb(112, 179, 255);
+}
+
+.books_container p {
+  color: rgb(139, 139, 139);
+}
